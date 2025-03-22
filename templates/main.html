@@ -1,0 +1,19 @@
+<h1>Welcome, {{ username }}</h1>
+
+<form action="/main" method="post">
+  <label for="word">Enter a word:</label>
+  <input type="text" id="word" name="word" required>
+  <button type="submit">Submit</button>
+</form>
+
+<form action="/logout" method="get">
+  <button type="submit">Logout</button>
+</form>
+
+{% if result %}
+  <h3>{{ result }}</h3>
+{% endif %}
+
+{% if suggestions %}
+  <h4>Did you mean: {{ suggestions }}</h4>
+{% endif %}
