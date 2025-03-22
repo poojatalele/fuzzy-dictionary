@@ -86,3 +86,8 @@ POST /main
   - **Username:** `admin`
   - **Password:** `password123`
 - The dictionary is loaded from `dictionary.json`. Ensure it follows the correct format.
+- Features I could implement if I got more time:
+- Real-Time Search Suggestions:
+    - fetch() on keyup, backend API for fuzzy search, display suggestions.
+- Store Past Searches in LocalStorage:
+    - localStorage.setItem(), check with localStorage.getItem(), avoid redundant API calls.

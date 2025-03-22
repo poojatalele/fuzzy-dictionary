@@ -3,7 +3,9 @@ from flask_session import Session
 from service import search_word
 
 app = Flask(__name__, template_folder='../templates', static_folder='../static')
-
+app.secret_key = 'super_secret_key'
+app.config['SESSION_TYPE'] = 'filesystem'
+Session(app)
 
 USERNAME = 'admin'
 PASSWORD = 'password123'
